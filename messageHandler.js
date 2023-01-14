@@ -83,7 +83,7 @@ module.exports = async (conn, message) => {
 	switch (command) {
 		case "!help":
 		{
-			const text = `Halo kak selamat datang di *${conn.user.name}*!
+			const text = `Halo! selamat datang di *${conn.user.name}*!
 
 - kirim *!help* untuk melihat daftar perintah dari bot ini
 
@@ -132,9 +132,9 @@ module.exports = async (conn, message) => {
 
 Bot sensitif terhadap simbol / spasi / huruf kecil / huruf besar jadi, bot tidak akan membalas jika terjadi kesalahan penulisan!
 
-Bot ini open source loh! kakak bisa cek di https://github.com/salismazaya/whatsapp-bot (jika ingin mengedit mohon untuk tidak hilangankan link ini)
+Bot ini open source loh! bisa cek di https://github.com/salismazaya/whatsapp-bot --pembuat bot(jika ingin mengedit mohon untuk tidak hilangankan link ini)
 
-apa? mau traktir aku? boleh banget https://saweria.co/salismazaya`.replace("(jika ingin mengedit mohon untuk tidak hilangankan link ini)", "");
+--ini pembuat nya-- apa? mau traktir aku? boleh banget https://saweria.co/salismazaya`.replace("(jika ingin mengedit mohon untuk tidak hilangankan link ini)", "");
 
 			conn.sendMessage(senderNumber, text, MessageType.text, { quoted: message });
 			break;
@@ -144,8 +144,8 @@ apa? mau traktir aku? boleh banget https://saweria.co/salismazaya`.replace("(jik
 		{
 			const text = `Hubungi saya di
 
-- Facebook: fb.me/salismazaya
-- Telegram: t.me/salismiftah
+- Facebook: fb.me/salismazaya --pembuat bot
+- Telegram: t.me/salismiftah --pembuat bot
 - Email: salismazaya@gmail.com`;
 			conn.sendMessage(senderNumber, text, MessageType.text, { quoted: message });
 			break;
